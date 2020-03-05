@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  padding: 10px;
+  margin-top: 10%;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-image: url("../img/600.png");
+}
+
+.information {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.information__time, .information__turn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: honeydew;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+.game-board {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 250px;
+  height: 250px;
+  margin-bottom: 10px;
+  background-color: honeydew;
+  border: 1px solid black;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: gray;
+  cursor: pointer;
+}
+
+.emptyCell {
+  background-color: honeydew;
+}
+
+.button {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=index.css.map */
