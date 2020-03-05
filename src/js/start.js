@@ -9,12 +9,13 @@ export function start() {
         if (!arr.includes(num)) {
             arr[i] = num;
             cell[i].textContent = num;
+            cell[i].classList.remove('emptyCell');
             i++;
         }
     }
+    if (!cell[cell.length - 1].classList.contains('emptyCell')) {
+        cell[cell.length - 1].classList.add('emptyCell');
+        cell[cell.length - 1].textContent = ' ';
+    }
     game();
-}
-
-function timer() {
-    const timer = document.getElementById('timer');
 }
